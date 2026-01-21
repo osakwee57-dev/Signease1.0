@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignEase | Professional Digital Signatures</title>
+    
+    <meta name="description" content="Professional-grade digital signature creator for drawing or typing signatures.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Imported fonts: Dancing Script, Pacifico, Great Vibes, Caveat, Sacramento, Monsieur La Doulaise -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Pacifico&family=Great+Vibes&family=Caveat:wght@400;500;600;700&family=Sacramento&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .font-cursive-dancing { font-family: 'Dancing Script', cursive; }
+        .font-cursive-pacifico { font-family: 'Pacifico', cursive; }
+        .font-cursive-greatvibes { font-family: 'Great Vibes', cursive; }
+        .font-cursive-caveat { font-family: 'Caveat', cursive; }
+        .font-cursive-sacramento { font-family: 'Sacramento', cursive; }
+        .font-cursive-monsieur { font-family: 'Monsieur La Doulaise', cursive; }
+        
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .signature-canvas { cursor: crosshair; touch-action: none; }
+        
+        .btn-gradient-indigo {
+          background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+        }
+        .btn-gradient-indigo:hover {
+          background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+        }
+
+        /* Custom thumb for ranges */
+        input[type=range]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          height: 18px;
+          width: 18px;
+          border-radius: 50%;
+          background: #4f46e5;
+          cursor: pointer;
+          box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+          border: 2px solid white;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
